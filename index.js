@@ -16,4 +16,8 @@ function exactMatch(array, object) {
 
 function exactMatchToList(array, object) {
   newArray = array.filter(instance => instance[Object.keys(object)[0]] === Object.values(object)[0]);
+  nameArray = []
+  for (const instance of newArray) {
+    nameArray.push(instance.name);
+  }
 }
