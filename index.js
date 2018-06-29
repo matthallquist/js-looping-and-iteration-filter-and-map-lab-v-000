@@ -20,4 +20,5 @@ function exactMatchToList(array, object) {
   for (const instance of newArray) {
     nameArray.push(instance.name);
   }
+  return nameArray;
 }
